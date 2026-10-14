@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>SkillSwap - Student Skill-Exchange Community</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <span class="lm"><i class="fa-solid fa-bridge"></i></span>
+        SkillSwap
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html" data-r="/">Home</a></li>
+          <li><a href="skills.html" data-r="/skills">Find My Skills</a></li>
+          <li><a href="ai.html" data-r="/ai">Ask Questions</a></li>
+          <li><a href="how.html" data-r="/how">How It Works</a></li>
+          <li><a href="about.html" data-r="/about">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="nb" id="nb"></div>
+      <button id="mm" aria-label="Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <main id="app"></main>
+
+    <footer>
+      <div class="fg">
+        <div>
+          <div class="logo" style="color:#fff">
+            <span class="lm"><i class="fa-solid fa-bridge"></i></span>
+            SkillSwap
+          </div>
+          <p style="margin-top:16px;max-width:340px;line-height:1.6">
+            A student skill-exchange community. Built on curiosity, powered by sharing.
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Find My Skills</a></li>
+            <li><a href="ai.html">AI Assistant</a></li>
+            <li><a href="how.html">How It Works</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get Started</h4>
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="how.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="fb">
+        <span>© 2026 SkillSwap. Grow together.</span>
+        <span>I teach what I know, and I learn what I need.</span>
+      </div>
+    </footer>
+
+    <dialog id="dlg"></dialog>
+    <div id="toast"></div>
+
+    <script>window.PAGE = "/about";</script>
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

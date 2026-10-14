@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>How It Works – SkillSwap</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <span class="lm"><i class="fa-solid fa-bridge"></i></span>
+        SkillSwap
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html" data-r="/">Home</a></li>
+          <li><a href="skills.html" data-r="/skills">Find My Skills</a></li>
+          <li><a href="ai.html" data-r="/ai">Ask Questions</a></li>
+          <li><a href="how.html" data-r="/how">How It Works</a></li>
+          <li><a href="about.html" data-r="/about">About Us</a></li>
+        </ul>
+      </nav>
+      <div class="nb" id="nb"></div>
+      <button id="mm" aria-label="Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+
+    <main id="app">
+      <section class="wrap">
+        <span class="tag">How It Works</span>
+        <h2>Three simple steps. A two-way win.</h2>
+        <p class="mu">No one-way lectures. Just students helping students move forward.</p>
+        <div class="g3">
+          <div class="step">
+            <b class="n">01</b>
+            <div class="ic"><i class="fa-solid fa-plus"></i></div>
+            <h3>Share the skills you know</h3>
+            <p class="mu">Tell the community what you can teach and what you would love to learn. Small skills count, too.</p>
+            <div class="ex">I can teach Python. I want to learn Figma.</div>
+          </div>
+          <div class="step">
+            <b class="n">02</b>
+            <div class="ic"><i class="fa-solid fa-user-group"></i></div>
+            <h3>Find a complementary peer</h3>
+            <p class="mu">Explore skills and connect with a student whose strengths match your learning goals.</p>
+            <div class="ex">They know Figma. They want to learn Python.</div>
+          </div>
+          <div class="step">
+            <b class="n">03</b>
+            <div class="ic"><i class="fa-solid fa-arrows-rotate"></i></div>
+            <h3>Exchange knowledge together</h3>
+            <p class="mu">Agree on a goal, choose a time, and take turns teaching. Put what you learn into practice.</p>
+            <div class="ex">Two students. Two skills. Shared progress.</div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:40px">
+          <button class="b by lg" data-action="navigate" data-path="/skills">
+            Start exploring
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="alt">
+        <div class="wrap faq">
+          <div>
+            <span class="tag">A Few Things To Know</span>
+            <h2>Curious? You’re in good company.</h2>
+            <p class="mu">A little clarity before your first exchange.</p>
+          </div>
+          <div id="faqList"></div>
+        </div>
+      </section>
+
+      <div class="join">
+        <div style="font-size:28px">
+          <i class="fa-solid fa-wand-magic-sparkles" style="color:var(--y)"></i>
+        </div>
+        <h2 style="margin-top:10px">Your next chapter starts with a skill.</h2>
+        <p class="mu">Bring what you know. Discover what you can become. Find your people at SkillSwap.</p>
+        <button class="b by lg" id="joinBtn">
+          <span id="joinLabel">Join SkillSwap</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <div class="mu" style="font-size:12px;margin-top:14px">Teach a little. Learn a lot. Grow together.</div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="fg">
+        <div>
+          <div class="logo" style="color:#fff">
+            <span class="lm"><i class="fa-solid fa-bridge"></i></span>
+            SkillSwap
+          </div>
+          <p style="margin-top:16px;max-width:340px;line-height:1.6">
+            A student skill-exchange community. Built on curiosity, powered by sharing.
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Find My Skills</a></li>
+            <li><a href="ai.html">AI Assistant</a></li>
+            <li><a href="how.html">How It Works</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Get Started</h4>
+          <ul>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="how.html">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="fb">
+        <span>© 2026 SkillSwap. Grow together.</span>
+        <span>I teach what I know, and I learn what I need.</span>
+      </div>
+    </footer>
+
+    <dialog id="dlg"></dialog>
+    <div id="toast"></div>
+
+    <script>window.PAGE = "/how";</script>
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
